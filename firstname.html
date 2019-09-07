@@ -40,6 +40,41 @@
             color: blue;
 
         }
+
+        form-input{
+            margin: 20px;
+            padding: 20px;
+
+        }
+
+.contact{
+    top: 20%;
+    left: 0;
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    background: gray;
+}
+.contact input,textarea{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.contact textarea{
+    height:200px;
+    resize: :none;
+}
+.contact input[type=submit]{
+    height: 60px;
+    background: blue;
+    color:white;
+    cursor:pointer;
+    border: none;
+    font-style: 18px;
+    margin-bottom: 0px;
+}
     </style>
 </head>
 
@@ -170,6 +205,34 @@
                 <li>OTHERS -> Microsoft Office Suite, Graphic Tools, etc</li>
             </ol>
 
+        </section>
+
+        <section id="contact">
+            <div class="contact">
+                <h2>Contact Solomon Eseme</h2>
+                <form name="contactForm">
+
+                    <div class="forn-input">
+                        <input type="text" id="name" name="fullname" placeholder="Name" required minlength="4">
+                    </div>
+                    <br>
+                    <div class="forn-input">
+                        <input type="email" required id="email" name="emailaddress" placeholder="Email">
+                    </div>
+                    <br>
+                    <div class="forn-input">
+                        <input type="text" required id="title" name="title" placeholder="Title">
+                    </div>
+                    <br>
+                    <div class="forn-input">
+                        <textarea required id="Message" name="message" placeholder="Write Message Here" minlength="20"></textarea>
+                    </div>
+                    <br>
+                    <div class="forn-input">
+                        <input required type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
         </section>
 
     </main>
